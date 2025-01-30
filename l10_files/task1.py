@@ -8,7 +8,10 @@ L10_PATH = Path(__file__)
 #
 # HINT. Search for joinpath method or / operator (in context of Path)
 def path_exists(path: str) -> bool:
-    pass
+    full_path = L10_PATH / path
+    print(f"Current working directory: {os.getcwd()}") 
+    print(f"Checking path: {full_path}")  
+    return full_path.exists()
 
 
 if __name__ == "__main__":
