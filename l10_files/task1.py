@@ -16,7 +16,7 @@ def path_exists(path: str) -> bool:
 
 if __name__ == "__main__":
     assert path_exists(".") is True
-    $#assert path_exists("../__init__.py") is True
+    #assert path_exists("../__init__.py") is True
     assert path_exists("../task1.py") is True
     assert path_exists("../wrong.txt") is False
     assert path_exists("/wrong/path") is False
