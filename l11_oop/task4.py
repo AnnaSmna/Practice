@@ -15,12 +15,12 @@ class Animal(ABC):
 # Modify classes Dog and Cat to make the script work.
 #
 # HINT: Dog and Cat must inherit class Animal
-class Dog:
+class Dog(Animal):
     def speak(self) -> str:
         return "woof"
 
 
-class Cat:
+class Cat(Animal):
     def speak(self) -> str:
         return "meow"
 
