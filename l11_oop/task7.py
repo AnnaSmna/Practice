@@ -10,7 +10,7 @@ class Point:
     def __add__(self, other):
         if isinstance(other, Point):
             return Point(self.x + other.x, self.y + other.y)
-        return NotImplemented
+        raise TypeError(f"Cannot add object of type {type(other)} to type Point")
 
 # Do not change the code below
 if __name__ == "__main__":
